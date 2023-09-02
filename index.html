@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="wrapper container" data-wrapper>
+
+        <header class="heading-container header">
+
+            <h1 class="title">DevDetective</h1>
+
+            <button id="btn-mode">
+                <p id="mode-text">DARK</p>
+                <div class="icon-container"><img id="mode-icon" src="./assets/images/moon-icon.svg" alt=""></div>
+            </button>
+        </header>
+
+        <main>
+
+            <div id="app">
+                <form class="search searchbar-container active" data-searchform>
+                    <i class=""></i>
+                    <input type="search" name="user-input" id="input" required placeholder="Enter a GitHub Username..." data-inpUsername>
+                    <!-- <div class="error">
+                        <p id="no-results">no search results</p>
+                    </div> -->
+                    <button type="submit" class="btn-search" data-search>
+                        Search
+                    </button>
+                </form>
+    
+            <!--profile card-->
+            <div class="profile-container">
+                <div class="main-content profile-content">
+    
+                    <div class="profile-header">
+                        <img data-profileImg id="avatar" alt="Profile Image" loading="lazy" >
+        
+                        <div class="text-content profile-info-wrapper">
+            
+                            <div class="name-doj profile-name">
+            
+                                <!--name-->
+                                <h2 id="name" data-name>Not Available</h2>
+                                <a href="" target="_blank" rel="noopener noreferrer" id="user" data-url>
+                                    @Not Available
+                                </a>
+            
+                            </div>
+                            <p id="date" data-doj>Not Available</p>
+                        </div>
+                            
+                    </div>
+        
+                        <p id="bio" data-profileBio>This profile has no bio</p>
+        
+                        <!--repos and followers-->
+                        <div class="profile-stat-wrapper">
+        
+                            <div class="profile-stats repo-details">
+                                <p class="stat-title">Repos</p>
+                                <p class="stat-val" data-noRepos>0</p>
+                            </div>
+        
+                            <div class="profile-stats followers">
+                                <p class="stat-title">Followers</p>
+                                <p class="stat-val" data-followers>0</p>
+                            </div>
+        
+                            <div class="profile-stats following">
+                                <p class="stat-title">Following</p>
+                                <p class="stat-val" data-following>0</p>
+                            </div>
+        
+                        </div>
+        
+                        <div class="profile-bottom-wrapper">
+                            <div class="profile-info">
+                                <div class="bottom-icons"><img src="./assets/images/location-icon.svg" alt=""></div>
+                                <p id="location" data-location></p>
+                            </div>
+                            <div class="profile-info">
+                                <div class="bottom-icons"><img src="./assets/images/website-icon.svg" alt=""></div>
+                                <a href="#" id="page" data-github></a>
+                            </div>
+                            <div class="profile-info">
+                                <div class="bottom-icons"><img src="./assets/images/twitter-icon.svg" alt=""></div>
+                                <a href="#" id="twitter" data-twitter></a>
+                            </div>
+                            <div class="profile-info">
+                                <div class="bottom-icons"><img src="./assets/images/company-icon.svg" alt=""></div>
+                                <p id="company" data-office></p>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+        
+        
+                </div>
+            </div>
+            </div>
+
+        </main>
+
+    </div>
+    
+    <script src="https://kit.fontawesome.com/dbefc4cbf9.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
